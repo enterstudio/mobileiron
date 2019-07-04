@@ -39,14 +39,17 @@
   "repository": "mathiasringhof/mobileiron",
   "scripts": {
     "lint": "gulp static",
-    "prepublish": "gulp prepublish",
+    "prepublish": "npm run snyk-protect; gulp prepublish",
     "test": "mocha test/",
     "test:watch": "mocha -w test/",
-    "jsdoc": "gulp jsdoc"
+    "jsdoc": "gulp jsdoc",
+    "snyk-protect": "snyk protect"
   },
   "license": "Apache-2.0",
   "dependencies": {
     "bluebird": "^3.3.5",
-    "request-promise": "^3.0.0"
-  }
+    "request-promise": "^3.0.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
