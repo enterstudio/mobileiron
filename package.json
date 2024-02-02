@@ -47,6 +47,6 @@
   "license": "Apache-2.0",
   "dependencies": {
     "bluebird": "^3.3.5",
-    "request-promise": "^3.0.0"
+    "request-promise": "^4.2.6"
   }
 }
